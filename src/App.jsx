@@ -1,27 +1,13 @@
-import { BrowserRouter, Routes,Route } from 'react-router-dom'
-import './App.css'
-import Info from './components/About'
-import Contact from './components/Contact.'
-import Home from './components/Home'
-
-import Navbar from './components/Navbar'
-import Dashboard from './components/Dashboard'
-
+import React from "react";
+import Counter from "./components/counter";
+import "./App.css";
+import FetchData from "./components/MultipleData";
+import FetchApis from "./components/ApiData";
 function App() {
-
   return (
-    <>
-      <BrowserRouter>
-        <Navbar />
-        <Dashboard />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<Info />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </BrowserRouter>
-    </>
-  )
+    <div className="app">
+      <FetchApis />
+    </div>
+  );
 }
-
-export default App
+export default App;

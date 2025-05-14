@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { ThemeProvider } from "./Theme";
 
 function Navbar() {
   return (
@@ -14,6 +15,7 @@ function Navbar() {
         <li>
           <Link to="/contact">Contact</Link>
         </li>
+        {/* <ThemeProvider/> */}
       </ul>
     </nav>
   );
